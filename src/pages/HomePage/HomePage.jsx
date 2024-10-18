@@ -2,23 +2,16 @@ import Navbar from "../../Component/Navbar";
 import FetchNewRelease from "../../Services/FetchHomeData";
 import { useEffect, useState } from "react";
 import SongsList from "../../Component/SongsList";
+import NewRealse from "../../Component/newRelease";
 
 function HomePage() {
-  const [data,setData]=useState([])
-  useEffect(()=>{
-    async function fetch()
-    {
-      const response=await FetchNewRelease();
-      console.log(response);
-      setData(response)
-    }
-    fetch()
-  },[])
+  
  
   return (
     <div>
       <Navbar />
       <SongsList/>
+      <NewRealse/>
       
     </div>
   );
