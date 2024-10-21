@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <div className="w-full h-16 border-b-2 bg-black flex justify-between items-center px-5 shadow-lg">
-      <div className="text-yellow-300 text-3xl font-bold hover:scale-105 transition-transform duration-300 cursor-pointer">
+      <div className="text-yellow-300 text-3xl font-bold hover:scale-105 transition-transform duration-300 cursor-pointer"> 
         SMusic
       </div>
       <div className="flex items-center h-[60%] justify-end w-full md:w-[70%] gap-4">
