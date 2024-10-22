@@ -3,7 +3,7 @@ import fetchAccessToken from "./FetchAccessKey"; // Adjust the path as necessary
 
 const fetchNewRelease = async () => {
     const accessToken = await fetchAccessToken(); // Get the access token
- 
+  
     const response = await fetch("https://api.spotify.com/v1/browse/new-releases", {
         method: "GET",
         headers: {
